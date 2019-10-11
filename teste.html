@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <meta charset="utf-8">
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/bulma-0.7.5/css/bulma.css">
+        <link rel="stylesheet" href="/bulma-0.7.5/css/bulma.css.map">
+        <link rel="stylesheet" href="/bulma-0.7.5/css/bulma.min">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+      <table>
+
+
+        <div class="row">
+            <div class="span6 offset1">
+                <h3>Calculadora</h3>
+                Valor 1<br></br>
+                <input type="text" id="vlr1"></input><br></br>
+                Valor 2<br></br>
+                <input type="text" id="vlr2"></input><br></br>
+        <button type="button" onclick="calcularErradoSoma();calcularCorretamenteSoma();" >SOMA</button>
+				<button type="button" onclick="calcularErradoSub();calcularCorretamenteSub();" >SUBTRAÇÂO</button>
+				<button type="button" onclick="calcularErradoMul();calcularCorretamenteMul();" >MULTIPLICAÇÃO</button>
+				<button type="button" onclick="calcularErradoDiv();calcularCorretamenteDiv();" >DIVISÃO</button><br><br>
+
+                Resultado errado:<br>
+                <span id="resultadoErrado"></span><br></br>
+                Resultado correto:<br>
+                <span id="resultadoCorreto"></span><br></br>
+
+            </div>
+        </div>
+
+
+        <script>
+        function calcularErradoSoma(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var soma = vlr1 + vlr2;
+          document.getElementById('resultadoErrado').innerHTML = soma;
+        }
+        function calcularCorretamenteSoma(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var soma = parseFloat(vlr1) + parseFloat(vlr2);
+          document.getElementById('resultadoCorreto').innerHTML = soma;
+        }
+
+		function calcularErradoSub(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var sub = vlr1 + vlr2;
+          document.getElementById('resultadoErrado').innerHTML = sub;
+        }
+        function calcularCorretamenteSub(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var sub = parseFloat(vlr1) - parseFloat(vlr2);
+          document.getElementById('resultadoCorreto').innerHTML = sub;
+        }
+		function calcularErradoMul(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var mul = vlr1 + vlr2;
+          document.getElementById('resultadoErrado').innerHTML = mul;
+        }
+        function calcularCorretamenteMul(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var mul = parseFloat(vlr1) * parseFloat(vlr2);
+          document.getElementById('resultadoCorreto').innerHTML = mul;
+        }
+		function calcularErradoDiv(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var div = vlr1 + vlr2;
+          document.getElementById('resultadoErrado').innerHTML = div;
+        }
+        function calcularCorretamenteDiv(){
+          var vlr1 = document.getElementById("vlr1").value
+          var vlr2 = document.getElementById("vlr2").value
+          var div = parseFloat(vlr1) / parseFloat(vlr2);
+          document.getElementById('resultadoCorreto').innerHTML = div;
+        }
+
+
+        </script>
+</table>
+    </body>
+</html>
