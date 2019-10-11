@@ -1,0 +1,107 @@
+{
+  "id": "92476a40-308a-4c60-8bc4-4c050bb9bd6f",
+  "version": "2.0",
+  "name": "divisaocerta",
+  "url": "http://127.0.0.1",
+  "tests": [{
+    "id": "0399fbb3-042f-4934-9db1-cf7ba94b594e",
+    "name": "divisaocerta",
+    "commands": [{
+      "id": "458d8672-493e-4934-8b76-02f4d7e8a2ec",
+      "comment": "",
+      "command": "open",
+      "target": "/teste.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fc0c376-e862-4459-9c74-a574ab9a8495",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bb76506-b299-44b2-aa42-fd8e966eac70",
+      "comment": "",
+      "command": "click",
+      "target": "id=vlr1",
+      "targets": [
+        ["id=vlr1", "id"],
+        ["css=#vlr1", "css:finder"],
+        ["xpath=//input[@id='vlr1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eb2b8c6-d907-4fc6-ac75-52bbb1ee8877",
+      "comment": "",
+      "command": "type",
+      "target": "id=vlr1",
+      "targets": [
+        ["id=vlr1", "id"],
+        ["css=#vlr1", "css:finder"],
+        ["xpath=//input[@id='vlr1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "755b825d-7b30-4169-a1af-00b0f4e6843a",
+      "comment": "",
+      "command": "click",
+      "target": "id=vlr2",
+      "targets": [
+        ["id=vlr2", "id"],
+        ["css=#vlr2", "css:finder"],
+        ["xpath=//input[@id='vlr2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bca584a-ca1d-479e-87bd-fb9fec12d5e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=vlr2",
+      "targets": [
+        ["id=vlr2", "id"],
+        ["css=#vlr2", "css:finder"],
+        ["xpath=//input[@id='vlr2']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "f16654bb-f9a5-4563-8e0e-dd38f0029f54",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(15)",
+      "targets": [
+        ["css=button:nth-child(15)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'DIVISÃO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c25d787a-baba-494f-b1ef-3b4f2aa5ae65",
+      "comment": "Para este teste dar certo, tem que resultar 5",
+      "command": "verifyText",
+      "target": "id=resultadoCorreto",
+      "targets": [
+        ["id=resultadoCorreto", "id"],
+        ["css=#resultadoCorreto", "css:finder"],
+        ["xpath=//span[@id='resultadoCorreto']", "xpath:attributes"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": "5"
+    }]
+  }],
+  "suites": [{
+    "id": "657b05c7-2bfc-4d2f-aff9-2f2919523759",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0399fbb3-042f-4934-9db1-cf7ba94b594e"]
+  }],
+  "urls": ["http://127.0.0.1/"],
+  "plugins": []
+}
